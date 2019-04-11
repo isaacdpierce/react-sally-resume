@@ -13,20 +13,19 @@ function Header(props) {
           alt='Sally working at her computer'
           id='profile-pic'
         />
-        <figcaption>
-          <h1>{name}</h1>
-          <p>I'm a passionate {title} looking to break into the industry</p>
-        </figcaption>
       </figure>
-
-      <address className='contact-info'>
-        <p>
-          <a href='mailto:hello@sallystudent.com'>hello@sallystudent.com</a>
-        </p>
-        <p>
-          <a href='tel:+333-555-9999'>+333-555-9999</a>
-        </p>
-      </address>
+      <div className='info'>
+        <h1>{name}</h1>
+        <p>I'm a passionate {title} looking to break into the industry</p>
+        <address className='info__contact'>
+          <p>
+            <a href='mailto:hello@sallystudent.com'>hello@sallystudent.com</a>
+          </p>
+          <p>
+            <a href='tel:+333-555-9999'>+333-555-9999</a>
+          </p>
+        </address>
+      </div>
     </header>
   );
 }

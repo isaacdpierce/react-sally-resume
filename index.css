@@ -12,6 +12,7 @@ figure {
 
 figure img {
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 header,
@@ -24,8 +25,14 @@ footer {
 }
 
 header,
-nav {
+nav,
+.info,
+address {
   display: flex;
+}
+
+nav,
+address {
   justify-content: space-between;
 }
 
@@ -36,12 +43,6 @@ header {
 
 header a {
   color: rgb(118, 250, 250);
-}
-
-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 address p,
@@ -64,4 +65,10 @@ li {
 
 img[src*='sallystudent'] {
   height: 200px;
+}
+
+.info {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
 }
